@@ -1,0 +1,12 @@
+.Modal {
+  display: inline-block;
+  min-width: 600px;
+  min-height: 400px;
+  margin-top: 140px;
+  background-color: white;
+  transition: transform .5s;
+}
+
+.Modal--open { transform: translateY(0); }
+
+.Modal--closed { transform: translateY(-9999vh); }
