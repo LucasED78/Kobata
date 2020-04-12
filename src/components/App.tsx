@@ -27,13 +27,10 @@ const App = () => {
       const currency = await currencyRepository.getCurrency('USD');
       
       setDollar(+currency.bid);
-      
     }
     
     fetchCurrency();
-    
-    console.log(dollar);
-  })
+  }, [])
   
   const backdropClickedHandler = () => { 
     setAmount('');
