@@ -1,0 +1,27 @@
+.Radio {
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #707070;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.Radio--checked {
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  border-radius: inherit;
+  transition: background-color .5s;
+}
+
+.Radio__label {
+  color: rgb(9, 20, 15);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+input[type="radio"] { display: none; }
+input[type="radio"]:checked ~ .Radio > .Radio--checked { background-color: #67E3A6; }
