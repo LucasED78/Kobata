@@ -12,13 +12,13 @@ const PaymentRadioGroup = (props: PaymentRadioGroupProps) => {
       <RadioWithLabel 
         label="dinheiro"
         name="payment"
-        value="1"
+        value="1.1"
         onChange={props.onChange} />
 
       <RadioWithLabel 
         label="cartão"
         name="payment"
-        value="2"
+        value="6.4"
         onChange={props.onChange} />
     </fieldset>
   )

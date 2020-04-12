@@ -27,7 +27,7 @@ const RadioWithLabel = (props: RadioWithLabelProps) => {
           <div className={classes['Radio--checked']}></div>
         </span>
         
-        <span className={classes.Radio__label}>esse e o label</span>
+        <span className={classes.Radio__label}>{ props.label }</span>
       </label>
       
     </>

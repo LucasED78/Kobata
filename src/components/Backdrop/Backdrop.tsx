@@ -10,7 +10,7 @@ export interface BackdropProps {
 const Backdrop = (props: BackdropProps) => {
   return (
     <div 
-      style={{ opacity: +props.show }}
+      style={{ opacity: +props.show, visibility: props.show ? 'visible' : 'hidden' }}
       className={classes.Backdrop}
       onClick={props.onBackdropClicked}>
         { props.children }
