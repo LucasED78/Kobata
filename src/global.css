@@ -1,8 +1,28 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/Roboto-Regular.ttf) format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/Roboto-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/Roboto-Light.ttf) format('truetype');
+  font-weight: lighter;
+}
+
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 14px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
   background-color: #67E3A6;
 }
