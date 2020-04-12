@@ -21,7 +21,7 @@ const CalculationResult = (props: CalculationResultProps) => {
     <div className={classes.CalculationResult}>
       <Paragraph content={`IOF: ${iof}`} />
 
-      <Paragraph content={`Cotação do dolar: ${dollar}`} />
+      <Paragraph content={`Cotação do dolar: ${MoneyUtil.formatReal(dollar)}`} />
 
       <FlexRow>
         <>
