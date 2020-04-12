@@ -11,11 +11,12 @@ export interface UnderlineInputProps {
 const UnderlineInput = (props: UnderlineInputProps) => {
   return (
     <input 
-      type="text" 
+      type="number" 
       placeholder={props.placeholder}
       className={classes.UnderlineInput}
       name={props.name}
-      onChange={props.onChange} />
+      onChange={props.onChange}
+      value={props.value} />
   )
 }
 

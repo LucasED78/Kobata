@@ -1,4 +1,5 @@
 .UnderlineInput {
+  display: block;
   min-width: 300px;
   padding: 5px 0;
   color: #707070;
@@ -9,6 +10,16 @@
   font-weight: lighter;
   letter-spacing: .1rem;
   outline: none;
+}
+
+.UnderlineInput::-webkit-outer-spin-button,
+.UnderlineInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.UnderlineInput {
+  -moz-appearance: textfield;
 }
 
 .UnderlineInput:hover { border-bottom: 1px solid #5CC85A; }
