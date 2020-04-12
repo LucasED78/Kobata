@@ -1,7 +1,7 @@
 # Kobata
 
 This is a simple application for read a product value in dollar, as well the state tax, and output the value
-in dollar with/without tax and real in the same format.
+in dollar with/without tax and real in the same format. [Try it out!](https://kobata.netlify.com/)
 
 # Starting
 
