@@ -1,0 +1,8 @@
+.Card {
+  display: inline-block;
+  min-width: 300px;
+  height: auto;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px lightgrey;
+}
