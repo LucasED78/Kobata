@@ -1,0 +1,16 @@
+.UnderlineInput {
+  min-width: 300px;
+  padding: 5px 0;
+  color: #707070;
+  border: 0;
+  border-bottom: 1px solid #777;
+  transition: border-bottom .5s;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: .1rem;
+  outline: none;
+}
+
+.UnderlineInput:hover { border-bottom: 1px solid #5CC85A; }
+
+.UnderlineInput::placeholder { color: #838383; }
