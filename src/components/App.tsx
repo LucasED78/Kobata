@@ -11,6 +11,8 @@ import Modal from './Modal/Modal';
 import KobataHttp from '../core/http/impl/KobataHttpImpl';
 import CurrencyRepository from '../core/repository/impl/CurrencyRepository';
 import CalculationResult from './CalculationResult/CalculationResult';
+import 'react-toastify/dist/ReactToastify.min.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
   
@@ -24,9 +26,13 @@ const App = () => {
   
   useEffect(() => {
     const fetchCurrency = async () => {
-      const currency = await currencyRepository.getCurrency('USD');
+      try {
+        const currency = await currencyRepository.getCurrency('USD');
       
-      setDollar(+currency.bid);
+        setDollar(+currency.bid);
+      } catch({ message }){
+        toast.error(message)
+      }
     }
     
     fetchCurrency();
@@ -47,6 +53,7 @@ const App = () => {
   return (
     <Content>
       <>
+        <ToastContainer />
         <Backdrop show={backdrop} onBackdropClicked={backdropClickedHandler}>
           <Modal show={backdrop}>
             <CalculationResult 

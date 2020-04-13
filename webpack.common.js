@@ -22,6 +22,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        exclude: /src/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.css$/,
         exclude: /node_modules/,
         use: ['style-loader', {
           loader: 'css-loader',
@@ -29,11 +34,6 @@ module.exports = {
             modules: true
           }
         }]
-      },
-      {
-        test: /\.css$/,
-        exclude: /src/,
-        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.(png|jpg|ttf)/,

@@ -16,7 +16,7 @@ class CurrencyRepository implements ICurrencyRepository {
 
       return Currency.fromJSON((await response).data[0])
     } catch(e){
-      throw new KobataHttpErrorImpl('An error ocurred when trying to get currency')
+      throw new KobataHttpErrorImpl('Ocorreu um erro ao buscar a cotação')
     }
   }
   
